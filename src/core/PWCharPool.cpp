@@ -478,42 +478,35 @@ StringX CPasswordCharPool::MakeHex() const
 bool CPasswordCharPool::CheckPassword(const StringX &pwd, StringX &error)
 {
   /**
-   * A password is "Good enough" if:
-   * It is at least SufficientLength characters long
-   * OR
-   * It is at least MinLength characters long AND it has
-   * at least one uppercase and one lowercase and one (digit or other).
+   * Custom master password policy for WF:
    *
-   * A future enhancement of this might be to calculate the Shannon Entropy
-   * in combination with a minimum password length.
-   * http://rosettacode.org/wiki/Entropy
+   * A password is "Good enough" if:
+   *
+   * It is at least MinLength characters long AND it has
+   * at least one uppercase and one lowercase and one digit.
+   *
    */
 
-  const size_t SufficientLength = 12;
-  const size_t MinLength = 8;
+  const size_t MinLength = 16;
   const size_t length = pwd.length();
 
-  if (length >= SufficientLength) {
-    return true;
-  }
 
   if (length < MinLength) {
-    LoadAString(error, IDSC_PASSWORDTOOSHORT);
+    Format(error, IDSC_PASSWORDTOOSHORT, MinLength);
     return false;
   }
 
-  // check for at least one uppercase and lowercase and one (digit or other)
-  bool has_uc = false, has_lc = false, has_digit = false, has_other = false;
+  // check for at least one uppercase and lowercase and one digit
+  bool has_uc = false, has_lc = false, has_digit = false;
 
   for (size_t i = 0; i < length; i++) {
     charT c = pwd[i];
     if (_istlower(c)) has_lc = true;
     else if (_istupper(c)) has_uc = true;
     else if (_istdigit(c)) has_digit = true;
-    else has_other = true;
   }
 
-  if (has_uc && has_lc && (has_digit || has_other)) {
+  if (has_uc && has_lc && has_digit) {
     return true;
   } else {
     LoadAString(error, IDSC_PASSWORDPOOR);

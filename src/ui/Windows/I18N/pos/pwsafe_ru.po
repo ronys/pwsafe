@@ -5303,8 +5303,9 @@ msgid "Password implies this is an alias entry, but specifies a base entry with 
 msgstr "Предполагается, что это псевдоним, но ссылка указывает на безымянный элемент.\nУ каждого элемента должен быть заголовок."
 
 #. Resource IDs: (3000)
-msgid "Password is too short"
-msgstr "Пароль слишком короткий"
+#, c-format
+msgid "Password is too short: Must be at least %ld characters with uppercase, lowercase letters and digits."
+msgstr ""
 
 # урезано из-за ограничения размеров
 #. Resource IDs: (1110)
@@ -5329,8 +5330,8 @@ msgid "Password length:"
 msgstr "Длина пароля:"
 
 #. Resource IDs: (3001)
-msgid "Password should be mixed case, with at least one digit or punctuation character"
-msgstr "Пароль должен содержать буквы обоих регистров и не менее одной цифры или знака препинания"
+msgid "Password should be mixed case, with at least one digit."
+msgstr ""
 
 #. Resource IDs: (32093 - Menu, 32093 - MenuEx, 32096 - Menu, 32096 - MenuEx)
 msgid "Password&Safe..."

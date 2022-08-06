@@ -5055,8 +5055,9 @@ msgid "Password implies this is an alias entry, but specifies a base entry with 
 msgstr "Geslo pomeni, da je to kratko ime vnosa, vendar določa osnovni vnos brez naslova.\nVsak vnos mora imeti naslov."
 
 #. Resource IDs: (3000)
-msgid "Password is too short"
-msgstr "Geslo je prekratko"
+#, c-format
+msgid "Password is too short: Must be at least %ld characters with uppercase, lowercase letters and digits."
+msgstr ""
 
 #. Resource IDs: (1110)
 msgid "Password last changed on:"
@@ -5080,8 +5081,8 @@ msgid "Password length:"
 msgstr "Dolžina gesla:"
 
 #. Resource IDs: (3001)
-msgid "Password should be mixed case, with at least one digit or punctuation character"
-msgstr "Geslo mora biti mešano z vsaj enim znakom števila ali ločilnim znakom"
+msgid "Password should be mixed case, with at least one digit."
+msgstr ""
 
 #. Resource IDs: (32093 - Menu, 32093 - MenuEx, 32096 - Menu, 32096 - MenuEx)
 msgid "Password&Safe..."

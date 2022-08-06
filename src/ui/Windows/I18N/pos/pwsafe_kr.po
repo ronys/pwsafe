@@ -5042,8 +5042,9 @@ msgid "Password implies this is an alias entry, but specifies a base entry with 
 msgstr ""
 
 #. Resource IDs: (3000)
-msgid "Password is too short"
-msgstr "비밀번호가 너무 짧습니다"
+#, c-format
+msgid "Password is too short: Must be at least %ld characters with uppercase, lowercase letters and digits."
+msgstr ""
 
 #. Resource IDs: (1110)
 msgid "Password last changed on:"
@@ -5067,8 +5068,8 @@ msgid "Password length:"
 msgstr "비밀번호 길이:"
 
 #. Resource IDs: (3001)
-msgid "Password should be mixed case, with at least one digit or punctuation character"
-msgstr "비밀번호가 반드시 대소문자를 혼합하고, 최소한 1개의 숫자 혹은 알파벳 문자를 입력해야 합니다"
+msgid "Password should be mixed case, with at least one digit."
+msgstr ""
 
 #. Resource IDs: (32093 - Menu, 32093 - MenuEx, 32096 - Menu, 32096 - MenuEx)
 msgid "Password&Safe..."

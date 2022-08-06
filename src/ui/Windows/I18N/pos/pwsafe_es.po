@@ -5042,8 +5042,9 @@ msgid "Password implies this is an alias entry, but specifies a base entry with 
 msgstr "La contraseña implica que la entrada es un alias, pero indica una entrada base sin título.\nCada entrada debe tener un título."
 
 #. Resource IDs: (3000)
-msgid "Password is too short"
-msgstr "La contraseña es demasiado corta"
+#, c-format
+msgid "Password is too short: Must be at least %ld characters with uppercase, lowercase letters and digits."
+msgstr ""
 
 #. Resource IDs: (1110)
 msgid "Password last changed on:"
@@ -5067,8 +5068,8 @@ msgid "Password length:"
 msgstr "Longitud de la contraseña:"
 
 #. Resource IDs: (3001)
-msgid "Password should be mixed case, with at least one digit or punctuation character"
-msgstr "La contraseña debería tener mayúsculas y minúsculas con al menos un dígito o símbolo"
+msgid "Password should be mixed case, with at least one digit."
+msgstr ""
 
 #. Resource IDs: (32093 - Menu, 32093 - MenuEx, 32096 - Menu, 32096 - MenuEx)
 msgid "Password&Safe..."
