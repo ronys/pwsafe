@@ -318,16 +318,13 @@ wxPanel* AddEditPropSheetDlg::CreateBasicPanel()
   m_BasicSizer->Add(itemBoxSizer5, wxGBPosition(/*row:*/ 6, /*column:*/ 0), wxDefaultSpan, wxALIGN_LEFT|wxALIGN_BOTTOM|wxBOTTOM, 0);
 
   m_BasicPasswordTextCtrl = new wxTextCtrl( panel, ID_TEXTCTRL_PASSWORD, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-  m_BasicSizer->Add(m_BasicPasswordTextCtrl, wxGBPosition(/*row:*/ 7, /*column:*/ 0), wxGBSpan(/*rowspan:*/ 1, /*columnspan:*/ 1), wxEXPAND|wxALIGN_CENTER_VERTICAL|wxBOTTOM, 7);
-
-  m_BasicPasswordBitmap = new wxStaticBitmap(panel, wxID_ANY, bitmapCheckmarkPlaceholder, wxDefaultPosition, wxDefaultSize, 0);
-  m_BasicSizer->Add(m_BasicPasswordBitmap, wxGBPosition(/*row:*/ 7, /*column:*/ 1), wxDefaultSpan, wxALIGN_CENTER_VERTICAL|wxALIGN_LEFT|wxBOTTOM, 7);
+  m_BasicSizer->Add(m_BasicPasswordTextCtrl, wxGBPosition(/*row:*/ 7, /*column:*/ 0), wxGBSpan(/*rowspan:*/ 1, /*columnspan:*/ 3), wxEXPAND|wxALIGN_CENTER_VERTICAL|wxBOTTOM, 7);
 
   m_BasicShowHideCtrl = new wxBitmapButton(panel, ID_BUTTON_SHOWHIDE, wxUtilities::GetBitmapResource(wxT("graphics/eye.xpm")), wxDefaultPosition, wxDefaultSize, wxBORDER_NONE);
-  m_BasicSizer->Add(m_BasicShowHideCtrl, wxGBPosition(/*row:*/ 7, /*column:*/ 2), wxDefaultSpan, wxALIGN_CENTER_VERTICAL|wxBOTTOM, 7);
+  m_BasicSizer->Add(m_BasicShowHideCtrl, wxGBPosition(/*row:*/ 7, /*column:*/ 3), wxDefaultSpan, wxALIGN_CENTER_VERTICAL|wxBOTTOM, 7);
 
   auto *itemButton21 = new wxButton( panel, ID_BUTTON_GENERATE, _("&Generate"), wxDefaultPosition, wxDefaultSize, 0 );
-  m_BasicSizer->Add(itemButton21, wxGBPosition(/*row:*/ 7, /*column:*/ 3), wxDefaultSpan, wxALIGN_CENTER_VERTICAL|wxLEFT|wxBOTTOM, 7);
+  m_BasicSizer->Add(itemButton21, wxGBPosition(/*row:*/ 7, /*column:*/ 5), wxDefaultSpan, wxALIGN_CENTER_VERTICAL|wxLEFT|wxBOTTOM, 7);
 
   m_BasicPasswordConfirmationTextLabel = new wxStaticText( panel, wxID_STATIC, _("Confirm"), wxDefaultPosition, wxDefaultSize, 0 );
   auto *itemStaticText13 = new wxStaticText( panel, ID_STATICTEXT_PASSWORD2, wxT("*"), wxDefaultPosition, wxDefaultSize, 0 );
@@ -338,10 +335,10 @@ wxPanel* AddEditPropSheetDlg::CreateBasicPanel()
   m_BasicSizer->Add(itemBoxSizer6, wxGBPosition(/*row:*/ 8, /*column:*/ 0), wxDefaultSpan, wxALIGN_LEFT|wxALIGN_BOTTOM|wxBOTTOM, 0);
 
   m_BasicPasswordConfirmationTextCtrl = new wxTextCtrl( panel, ID_TEXTCTRL_PASSWORD2, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_PASSWORD );
-  m_BasicSizer->Add(m_BasicPasswordConfirmationTextCtrl, wxGBPosition(/*row:*/ 9, /*column:*/ 0), wxDefaultSpan, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxBOTTOM, 7);
+  m_BasicSizer->Add(m_BasicPasswordConfirmationTextCtrl, wxGBPosition(/*row:*/ 9, /*column:*/ 0), wxGBSpan(/*rowspan:*/ 1, /*columnspan:*/ 3), wxEXPAND|wxALIGN_CENTER_VERTICAL|wxBOTTOM, 7);
 
   m_BasicPasswordConfirmationBitmap = new wxStaticBitmap(panel, wxID_ANY, wxUtilities::GetBitmapResource(wxT("graphics/checkmark_placeholder.xpm")), wxDefaultPosition, wxDefaultSize, 0);
-  m_BasicSizer->Add(m_BasicPasswordConfirmationBitmap, wxGBPosition(/*row:*/ 9, /*column:*/ 1), wxDefaultSpan, wxALIGN_CENTER|wxALIGN_LEFT|wxBOTTOM, 7);
+  m_BasicSizer->Add(m_BasicPasswordConfirmationBitmap, wxGBPosition(/*row:*/ 9, /*column:*/ 4), wxDefaultSpan, wxALIGN_CENTER|wxALIGN_LEFT|wxBOTTOM, 7);
   
   auto *itemButton22 = new wxButton( panel, ID_BUTTON_ALIAS, _("&Alias To..."), wxDefaultPosition, wxDefaultSize, 0 );
   m_BasicSizer->Add(itemButton22, wxGBPosition(/*row:*/ 9, /*column:*/ 3), wxDefaultSpan, wxALIGN_CENTER_VERTICAL|wxLEFT|wxBOTTOM, 7);
