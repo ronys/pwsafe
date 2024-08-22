@@ -320,8 +320,11 @@ wxPanel* AddEditPropSheetDlg::CreateBasicPanel()
   m_BasicPasswordTextCtrl = new wxTextCtrl( panel, ID_TEXTCTRL_PASSWORD, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
   m_BasicSizer->Add(m_BasicPasswordTextCtrl, wxGBPosition(/*row:*/ 7, /*column:*/ 0), wxGBSpan(/*rowspan:*/ 1, /*columnspan:*/ 3), wxEXPAND|wxALIGN_CENTER_VERTICAL|wxBOTTOM, 7);
 
+   m_BasicPasswordBitmap = new wxStaticBitmap(panel, wxID_ANY, bitmapCheckmarkPlaceholder, wxDefaultPosition, wxDefaultSize, 0);
+  m_BasicSizer->Add(m_BasicPasswordBitmap, wxGBPosition(/*row:*/ 7, /*column:*/ 3), wxDefaultSpan, wxALIGN_CENTER_VERTICAL|wxALIGN_LEFT|wxBOTTOM, 7);
+
   m_BasicShowHideCtrl = new wxBitmapButton(panel, ID_BUTTON_SHOWHIDE, wxUtilities::GetBitmapResource(wxT("graphics/eye.xpm")), wxDefaultPosition, wxDefaultSize, wxBORDER_NONE);
-  m_BasicSizer->Add(m_BasicShowHideCtrl, wxGBPosition(/*row:*/ 7, /*column:*/ 3), wxDefaultSpan, wxALIGN_CENTER_VERTICAL|wxBOTTOM, 7);
+  m_BasicSizer->Add(m_BasicShowHideCtrl, wxGBPosition(/*row:*/ 7, /*column:*/ 4), wxDefaultSpan, wxALIGN_CENTER_VERTICAL|wxBOTTOM, 7);
 
   auto *itemButton21 = new wxButton( panel, ID_BUTTON_GENERATE, _("&Generate"), wxDefaultPosition, wxDefaultSize, 0 );
   m_BasicSizer->Add(itemButton21, wxGBPosition(/*row:*/ 7, /*column:*/ 5), wxDefaultSpan, wxALIGN_CENTER_VERTICAL|wxLEFT|wxBOTTOM, 7);
