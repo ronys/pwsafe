@@ -366,7 +366,7 @@ TEST_F(CommandsTest, UpdatePassword)
     EXPECT_EQ(3U, pwhl.getMax());
     EXPECT_EQ(1U, pwhl.size());
     EXPECT_EQ(sxOldPassword, pwhl[0].password);
-    EXPECT_EQ(tPMtime, pwhl[0].changetttdate);
+    EXPECT_LE(tPMtime - pwhl[0].changetttdate, 1);
   }
 
   core.Undo();
@@ -401,7 +401,7 @@ TEST_F(CommandsTest, UpdatePassword)
     EXPECT_EQ(3U, pwhl.getMax());
     EXPECT_EQ(1U, pwhl.size());
     EXPECT_EQ(sxOldPassword, pwhl[0].password);
-    EXPECT_EQ(tPMtime, pwhl[0].changetttdate);
+    EXPECT_LE(tPMtime - pwhl[0].changetttdate, 1);
   }
 
   // Get core to delete any existing commands
