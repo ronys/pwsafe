@@ -46,8 +46,15 @@ constexpr CItemData::FieldType known_fields[] = {
   CItemData::TOTPCONFIG,
   CItemData::TOTPLENGTH,
   CItemData::TOTPTIMESTEP,
-  CItemData::TOTPSTARTTIME
+  CItemData::TOTPSTARTTIME,
+  CItemData::DATA_ATT_TITLE,
+  CItemData::DATA_ATT_MEDIATYPE,
+  CItemData::DATA_ATT_FILENAME,
+  CItemData::DATA_ATT_MTIME,
+  CItemData::DATA_ATT_CONTENT,
 };
+
+#include <iomanip>
 
 int PrintSearchResults(const ItemPtrVec &items, PWScore &, const CItemData::FieldBits &ftp,
                             std::wostream &os) {
@@ -55,8 +62,18 @@ int PrintSearchResults(const ItemPtrVec &items, PWScore &, const CItemData::Fiel
     const CItemData &data = *p;
     os << st_GroupTitleUser{data.GetGroup(), data.GetTitle(), data.GetUser()} << endl;
     for (auto ft : known_fields) {
-      if (ftp.test(ft))
-        os << data.FieldName(ft) << L": " << data.GetFieldValue(ft) << endl;
+      if (ftp.test(ft)) {
+        if (ft == CItemData::DATA_ATT_CONTENT) {
+          std::vector<unsigned char> content = data.GetAttContent();
+          os << data.FieldName(ft) << L": ";
+          for (unsigned char c : content) {
+            os << std::hex << std::setw(2) << std::setfill(L'0') << static_cast<int>(c);
+          }
+          os << endl;
+        } else {
+          os << data.FieldName(ft) << L": " << data.GetFieldValue(ft) << endl;
+        }
+      }
     }
   });
   return PWScore::SUCCESS;

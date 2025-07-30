@@ -25,7 +25,7 @@ LIBCORE	= $(LIBPATH)/libcore.a
 LIBOS  	= $(LIBPATH)/libos.a
 LIBS    = $(LIBCORE) $(LIBOS)
 
-export CPPFLAGS += -std=c++11
+export CPPFLAGS += -std=c++14
 ifeq ($(findstring Darwin, $(shell uname -s)), Darwin)
 	XERCESCPPFLAGS=
 	PLATFORM=mac
@@ -38,6 +38,7 @@ else
 	PLATFORM=unix
 	GTEST_DIR=/usr/src/gtest
 	GTEST_HEADERS=/usr/include/gtest/*.h /usr/include/gtest/internal/*.h
+	GTEST_SRCS_=$(GTEST_DIR)/src/gtest-all.cc
 	GTEST_SRCS=$(GTEST_DIR)/src/*.cc $(GTEST_DIR)/src/*.h $(GTEST_HEADERS)
 	GTEST_OBJ = $(OBJPATH)/gtest-all.o
 	EXTLIBS=-luuid -lxerces-c -lpthread -lmagic
@@ -57,7 +58,7 @@ $(OBJPATH)/%.o : %.c
 $(OBJPATH)/%.o : %.cpp
 	$(CXX) -g $(CXXFLAGS) -c $< -o $@
 
-all : setup $(EXE) $(TESTEXE)
+all : setup test $(EXE) $(TESTEXE)
 
 
 $(LIBCORE): 

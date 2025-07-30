@@ -41,6 +41,7 @@ LIBSRC          = CheckVersion.cpp \
                   UTF8Conv.cpp Util.cpp CoreOtherDB.cpp \
                   VerifyFormat.cpp XMLprefs.cpp \
                   ExpiredList.cpp PWStime.cpp \
+                  Validate.cpp \
                   pugixml/pugixml.cpp \
                   XML/Pugi/PFileXMLProcessor.cpp XML/Pugi/PFilterXMLProcessor.cpp \
                   XML/XMLFileHandlers.cpp XML/XMLFileValidation.cpp \

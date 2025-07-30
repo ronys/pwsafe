@@ -54,6 +54,11 @@ const std::map<int, CItemData::FieldType> id2enum = {
 	{IDSC_FLDNMTOTPLENGTH,     CItem::TOTPLENGTH},
 	{IDSC_FLDNMTOTPTIMESTEP,   CItem::TOTPTIMESTEP},
 	{IDSC_FLDNMTOTPSTARTTIME,  CItem::TOTPSTARTTIME},
+	{IDSC_FLDNMDATAATTTITLE,       CItem::DATA_ATT_TITLE},
+	{IDSC_FLDNMDATAATTMEDIATYPE,   CItem::DATA_ATT_MEDIATYPE},
+	{IDSC_FLDNMDATAATTFILENAME,    CItem::DATA_ATT_FILENAME},
+	{IDSC_FLDNMDATAATTMTIME,       CItem::DATA_ATT_MTIME},
+	{IDSC_FLDNMDATAATTCONTENT,     CItem::DATA_ATT_CONTENT},
 };
 
 std::vector<stringT> GetValidFieldNames() {
@@ -145,13 +150,36 @@ void UserArgs::SetSubset(const std::wstring &s)
   subset = ParseSubset(s);
 }
 
+#include "../../os/file.h"
+#include <cstdlib>
+
 UserArgs::FieldUpdates ParseFieldValues(const wstring &updates)
 {
   UserArgs::FieldUpdates fieldValues;
   Split(updates, L"[;,]", [&fieldValues](const wstring &nameval) {
     std::wsmatch m;
     if (std::regex_match(nameval, m, std::wregex(L"([^=:]+?)[=:](.+)"))) {
-      fieldValues.push_back( std::make_tuple(String2FieldType(m.str(1)), std2stringx(m.str(2))) );
+      CItemData::FieldType ft = String2FieldType(m.str(1));
+      StringX val = std2stringx(m.str(2));
+      if (ft == CItemData::DATA_ATT_CONTENT && !val.empty() && val[0] == '@') {
+        std::wstring filename(val.substr(1).c_str());
+        std::FILE *fp = pws_os::FOpen(filename, L"rb");
+        if (fp) {
+          size_t len = pws_os::fileLength(fp);
+          char* content = new char[len + 1];
+          fread(content, 1, len, fp);
+          pws_os::FClose(fp, false);
+          content[len] = '\0';
+          wchar_t* wcontent = new wchar_t[len + 1];
+          mbstowcs(wcontent, content, len + 1);
+          val = StringX(wcontent);
+          delete[] content;
+          delete[] wcontent;
+        } else {
+          throw std::invalid_argument{"Could not open file: " + toutf8(filename)};
+        }
+      }
+      fieldValues.push_back(std::make_tuple(ft, val));
     }
     else {
       throw std::invalid_argument{"Could not parse field value to be updated: " + toutf8(nameval)};

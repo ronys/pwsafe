@@ -1761,6 +1761,17 @@ void CItemData::SetFieldValue(FieldType ft, const StringX &value)
     case KBSHORTCUT: /* 19 */
       SetKBShortcut(value);
       break;
+    case DATA_ATT_TITLE:
+    case DATA_ATT_MEDIATYPE:
+    case DATA_ATT_FILENAME:
+      CItem::SetField(ft, value);
+      break;
+    case DATA_ATT_MTIME:
+      SetTime(ft, value.c_str());
+      break;
+    case DATA_ATT_CONTENT:
+      CItem::SetField(ft, value);
+      break;
     case GROUPTITLE: /* 00 */
     case UUID:       /* 01 */
     case RESERVED:   /* 0b */
