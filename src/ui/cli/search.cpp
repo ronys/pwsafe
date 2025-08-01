@@ -207,9 +207,8 @@ int SearchInternal(PWScore &core, const UserArgs &ua, wostream &os)
 
     case UserArgs::Print:
     {
-      CItemData::FieldBits ftp = ParseFields(ua.opArg2);
-      return DoSearch<UserArgs::Print>(core, ua, [&core, &ftp, &os](const ItemPtrVec &matches) {
-        return PrintSearchResults(matches, core, ftp, os);
+      return DoSearch<UserArgs::Print>(core, ua, [&core, &ua, &os](const ItemPtrVec &matches) {
+        return PrintSearchResults(matches, core, ua, os);
       });
     }
 

@@ -18,7 +18,7 @@
 using ItemPtrVec = std::vector<const CItemData *>;
 using FieldUpdates = UserArgs::FieldUpdates ;
 
-int PrintSearchResults(const ItemPtrVec &items, PWScore &core, const CItemData::FieldBits &ftp, std::wostream &os);
+int PrintSearchResults(const ItemPtrVec &items, PWScore &core, const UserArgs &ua, std::wostream &os);
 int DeleteSearchResults(const ItemPtrVec &items, PWScore &core);
 int UpdateSearchResults(const ItemPtrVec &items, PWScore &core, const FieldUpdates &updates);
 int ClearFieldsOfSearchResults(const ItemPtrVec &items, PWScore &core, const CItemData::FieldBits &ftp);

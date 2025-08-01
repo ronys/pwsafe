@@ -67,6 +67,7 @@ struct UserArgs {
   using FieldUpdates = std::vector< FieldValue >;
   FieldUpdates fieldValues;
   void SetFieldValues(const stringT &namevals);
+  stringT attachment_filename;
 
   void SetFields(const std::wstring &f);
   void SetSubset(const std::wstring &s);
@@ -78,6 +79,12 @@ struct UserArgs {
       switch (op) {
         case Add:
           SetFieldValues(Utf82wstring(arg));
+          break;
+        case Search:
+          opArg = Utf82wstring(arg);
+          if (opArg2.find(L"Attachment Content") != std::wstring::npos) {
+            SetFieldValues(opArg2);
+          }
           break;
         default:
           opArg = Utf82wstring(arg);

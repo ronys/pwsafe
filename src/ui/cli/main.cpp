@@ -371,7 +371,15 @@ bool parseArgs(int argc, char *argv[], UserArgs &ua)
 
           case 'p':
               ua.SearchAction = UserArgs::Print;
-              if (optarg) ua.opArg2 = Utf82wstring(optarg);
+              if (optarg) {
+                ua.opArg2 = Utf82wstring(optarg);
+                if (ua.opArg2.find(L"Attachment Content") != wstring::npos) {
+                  auto pos = ua.opArg2.find(L'@');
+                  if (pos != wstring::npos) {
+                    ua.attachment_filename = ua.opArg2.substr(pos + 1);
+                  }
+                }
+              }
               break;
 
           case 'u':

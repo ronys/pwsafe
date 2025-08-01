@@ -55,9 +55,11 @@ constexpr CItemData::FieldType known_fields[] = {
 };
 
 #include <iomanip>
+#include "../../os/file.h"
 
-int PrintSearchResults(const ItemPtrVec &items, PWScore &, const CItemData::FieldBits &ftp,
+int PrintSearchResults(const ItemPtrVec &items, PWScore &, const UserArgs &ua,
                             std::wostream &os) {
+  const CItemData::FieldBits &ftp = ParseFields(ua.opArg2);
   for_each( items.begin(), items.end(), [&ftp, &os](const CItemData *p) {
     const CItemData &data = *p;
     os << st_GroupTitleUser{data.GetGroup(), data.GetTitle(), data.GetUser()} << endl;
@@ -65,11 +67,13 @@ int PrintSearchResults(const ItemPtrVec &items, PWScore &, const CItemData::Fiel
       if (ftp.test(ft)) {
         if (ft == CItemData::DATA_ATT_CONTENT) {
           std::vector<unsigned char> content = data.GetAttContent();
-          os << data.FieldName(ft) << L": ";
-          for (unsigned char c : content) {
-            os << std::hex << std::setw(2) << std::setfill(L'0') << static_cast<int>(c);
+          if (!content.empty()) {
+            os << data.FieldName(ft) << L": ";
+            for (unsigned char c : content) {
+              os << std::hex << std::setw(2) << std::setfill(L'0') << static_cast<int>(c);
+            }
+            os << endl;
           }
-          os << endl;
         } else {
           os << data.FieldName(ft) << L": " << data.GetFieldValue(ft) << endl;
         }

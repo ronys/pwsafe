@@ -161,20 +161,18 @@ UserArgs::FieldUpdates ParseFieldValues(const wstring &updates)
     if (std::regex_match(nameval, m, std::wregex(L"([^=:]+?)[=:](.+)"))) {
       CItemData::FieldType ft = String2FieldType(m.str(1));
       StringX val = std2stringx(m.str(2));
-      if (ft == CItemData::DATA_ATT_CONTENT && !val.empty() && val[0] == '@') {
+      if (ft == CItemData::DATA_ATT_CONTENT) {
+        if (val.empty() || val[0] != '@') {
+          throw std::invalid_argument{"Attachment content must be specified with @filename"};
+        }
         std::wstring filename(val.substr(1).c_str());
         std::FILE *fp = pws_os::FOpen(filename, L"rb");
         if (fp) {
           size_t len = pws_os::fileLength(fp);
-          char* content = new char[len + 1];
-          fread(content, 1, len, fp);
+          std::vector<unsigned char> content(len);
+          fread(&content[0], 1, len, fp);
           pws_os::FClose(fp, false);
-          content[len] = '\0';
-          wchar_t* wcontent = new wchar_t[len + 1];
-          mbstowcs(wcontent, content, len + 1);
-          val = StringX(wcontent);
-          delete[] content;
-          delete[] wcontent;
+          val = StringX(reinterpret_cast<const wchar_t *>(content.data()), len / sizeof(wchar_t));
         } else {
           throw std::invalid_argument{"Could not open file: " + toutf8(filename)};
         }
