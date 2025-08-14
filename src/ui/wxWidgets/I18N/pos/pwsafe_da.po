@@ -743,17 +743,17 @@ msgstr "Eksporter Tekst"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1206
 #, c-format
-msgid "%s files (*.%s;*.jpg)|*.%s;*.jpg|"
+msgid "%ls files (*.%ls;*.jpg)|*.%ls;*.jpg|"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1211
 #, c-format
-msgid "%s files (*.%s;*.gz)|*.%s;*.gz|"
+msgid "%ls files (*.%ls;*.gz)|*.%ls;*.gz|"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1216
 #, fuzzy, c-format
-msgid "%s files (*.%s)|*.%s|"
+msgid "%ls files (*.%ls)|*.%ls|"
 msgstr "XML filer (*.xml)|*.xml||"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1245
@@ -776,17 +776,17 @@ msgstr "Brug Standart"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
 #, fuzzy, c-format
-msgid "Expires in %d day (%s)"
+msgid "Expires in %d day (%ls)"
 msgstr "indenfor%d dag(e)"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
 #, fuzzy, c-format
-msgid "Expires in %d days (%s)"
+msgid "Expires in %d days (%ls)"
 msgstr "indenfor%d dag(e)"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1476
 #, c-format
-msgid "Expired on %s"
+msgid "Expired on %ls"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1483
@@ -803,14 +803,14 @@ msgstr ""
 #, c-format
 msgid ""
 "\n"
-"(Next expiration on %s)"
+"(Next expiration on %ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1490
 #, c-format
 msgid ""
 "\n"
-"(Expired on %s)"
+"(Expired on %ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1498
@@ -2036,11 +2036,11 @@ msgstr "Ude af stand til at  vise URL"
 msgid ""
 "Error at column %d:\n"
 "\n"
-"%s"
+"%ls"
 msgstr ""
 "Fejl i kolonne %d:\n"
 "\n"
-"%s"
+"%ls"
 
 #: ../../../ui/wxWidgets/MenuEditHandlers.cpp:1069
 msgid "Error parsing Run Command"
@@ -2688,7 +2688,7 @@ msgstr ""
 #: ../../../ui/wxWidgets/MenuManageHandlers.cpp:475
 #, fuzzy, c-format
 msgid " [Process ID=%ls]"
-msgstr "[Proces ID=%s]"
+msgstr "[Proces ID=%ls]"
 
 #: ../../../ui/wxWidgets/MenuManageHandlers.cpp:481
 #, c-format
@@ -5333,24 +5333,24 @@ msgstr ""
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2625
 #, c-format
 msgid ""
-"Dropped entry '%s:%s:%s' password points to an entry that is also an alias.\n"
+"Dropped entry '%ls:%ls:%ls' password points to an entry that is also an alias.\n"
 "\n"
 "The dropped entry now references that entry's base entry."
 msgstr ""
-"Mistet post '%s:%s:%s' adgangskode Peger på en post der også er et alias.\n"
+"Mistet post '%ls:%ls:%ls' adgangskode Peger på en post der også er et alias.\n"
 "\n"
 "Den mistede post henviser nu til den posts basis post."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2632
 #, fuzzy, c-format
-msgid "This alias's target [%s:%s:%s] is not a normal entry."
-msgstr "Dette alias' mål [%s:%s:%s] er ikke en normal post eller allerede en alias basis."
+msgid "This alias's target [%ls:%ls:%ls] is not a normal entry."
+msgstr "Dette alias' mål [%ls:%ls:%ls] er ikke en normal post eller allerede en alias basis."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2649
 #, fuzzy, c-format
-msgid "This shortcut's target [%s:%s:%s] is not a normal entry."
+msgid "This shortcut's target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
-"Denne genvejs mål [%s:%s:%s] er ikke en normal post elller allerede en basis genvej."
+"Denne genvejs mål [%ls:%ls:%ls] er ikke en normal post elller allerede en basis genvej."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2732 ../../../core/core_st.cpp:110
 #, c-format
@@ -5751,8 +5751,8 @@ msgstr "IkkeMereHukommelseUndtagelse."
 
 #: ../../../core/core_st.cpp:30
 #, fuzzy, c-format
-msgid "This alias' target [%s:%s:%s] is not a normal entry."
-msgstr "Dette alias' mål [%s:%s:%s] er ikke en normal post eller allerede en alias basis."
+msgid "This alias' target [%ls:%ls:%ls] is not a normal entry."
+msgstr "Dette alias' mål [%ls:%ls:%ls] er ikke en normal post eller allerede en alias basis."
 
 #: ../../../core/core_st.cpp:31
 msgid "after"
@@ -5772,40 +5772,40 @@ msgstr "aliases"
 
 #: ../../../core/core_st.cpp:35
 #, c-format
-msgid "multiple entries exist with title=%s."
-msgstr "flere poster eksisterer med titlen=%s."
+msgid "multiple entries exist with title=%ls."
+msgstr "flere poster eksisterer med titlen=%ls."
 
 #: ../../../core/core_st.cpp:36
 #, c-format
-msgid "no entry exists with title=%s."
-msgstr "ingen poster eksisterer med titlen=%s."
+msgid "no entry exists with title=%ls."
+msgstr "ingen poster eksisterer med titlen=%ls."
 
 #: ../../../core/core_st.cpp:37
 #, c-format
-msgid "multiple entries exist with title=%s and username=%s or with group=%s and title=%s."
+msgid "multiple entries exist with title=%ls and username=%ls or with group=%ls and title=%ls."
 msgstr ""
-"flere poster eksisterer med titlen=%s og brugernavn=%s eller med gruppe=%s og titel=%s."
+"flere poster eksisterer med titlen=%ls og brugernavn=%ls eller med gruppe=%ls og titel=%ls."
 
 #: ../../../core/core_st.cpp:38
 #, c-format
-msgid "no entry exists with title=%s and username=%s or with group=%s, title=%s."
+msgid "no entry exists with title=%ls and username=%ls or with group=%ls, title=%ls."
 msgstr ""
-"ingen poster eksisterer med titel=%s og brugernavn=%s eller med gruppe=%s, titel=%s."
+"ingen poster eksisterer med titel=%ls og brugernavn=%ls eller med gruppe=%ls, titel=%ls."
 
 #: ../../../core/core_st.cpp:39
 #, c-format
-msgid "no entry exists with group=%s, title=%s and username=%s."
-msgstr "ingen poster eksisterer med gruppe=%s, titel=%s og brugernavn=%s."
+msgid "no entry exists with group=%ls, title=%ls and username=%ls."
+msgstr "ingen poster eksisterer med gruppe=%ls, titel=%ls og brugernavn=%ls."
 
 #: ../../../core/core_st.cpp:40
 #, c-format
-msgid "no entry exists with group=%s, title=%s and empty username."
-msgstr "ingen poster eksisterer med gruppe=%s, titel=%s og tomt brugernavn."
+msgid "no entry exists with group=%ls, title=%ls and empty username."
+msgstr "ingen poster eksisterer med gruppe=%ls, titel=%ls og tomt brugernavn."
 
 #: ../../../core/core_st.cpp:41
 #, c-format
-msgid "no entry exists in the root with title=%s and username=%s."
-msgstr "ingen poster eksisterer i roden med titel=%s og brugernavn=%s."
+msgid "no entry exists in the root with title=%ls and username=%ls."
+msgstr "ingen poster eksisterer i roden med titel=%ls og brugernavn=%ls."
 
 #: ../../../core/core_st.cpp:42
 msgid "Password implies this is an alias entry, but "
@@ -5844,7 +5844,7 @@ msgstr ""
 #: ../../../core/core_st.cpp:50
 #, c-format
 msgid ""
-"The referenced entry '%s:%s:%s' is itself an alias or shortcut. This is not supported."
+"The referenced entry '%ls:%ls:%ls' is itself an alias or shortcut. This is not supported."
 msgstr ""
 
 #: ../../../core/core_st.cpp:51
@@ -5953,14 +5953,14 @@ msgid ""
 "\t %ls\n"
 msgstr ""
 "fuldstændigt den nuværende database:\n"
-"\t %s\n"
+"\t %ls\n"
 "og:\n"
-"\t %s"
+"\t %ls"
 
 #: ../../../core/core_st.cpp:65
 #, fuzzy, c-format
 msgid "\tGroup:'%ls'; Title:'%ls'; User:'%ls'"
-msgstr "\tGruppe:'%s'; Titel:'%s'; Bruger:'%s'"
+msgstr "\tGruppe:'%ls'; Titel:'%ls'; Bruger:'%ls'"
 
 #: ../../../core/core_st.cpp:66
 msgid "C:F[R-O]"
@@ -6004,7 +6004,7 @@ msgstr "URL kopieret "
 #: ../../../core/core_st.cpp:76
 #, fuzzy, c-format
 msgid "%ls - Copied %ls"
-msgstr "%ls - Kopieret %s"
+msgstr "%ls - Kopieret %ls"
 
 #: ../../../core/core_st.cpp:77
 #, fuzzy, c-format
@@ -6064,7 +6064,7 @@ msgstr "Træk # %d"
 #: ../../../core/core_st.cpp:101
 #, fuzzy, c-format
 msgid "%ls - Drag & Drop %ls"
-msgstr "%ls - Kopieret %s"
+msgstr "%ls - Drag & Drop %ls"
 
 #: ../../../core/core_st.cpp:102
 #, fuzzy, c-format
@@ -6114,7 +6114,7 @@ msgstr "indenfor%d dag(e)"
 
 #: ../../../core/core_st.cpp:116
 #, fuzzy, c-format
-msgid "DB Export from database: '%s'"
+msgid "DB Export from database: '%ls'"
 msgstr "Fletter databasen: "
 
 #: ../../../core/core_st.cpp:117
@@ -7080,14 +7080,14 @@ msgstr ""
 msgid "\tNo entries were found containing search string '%ls' %ls"
 msgstr ""
 "\tDe følgende begrænsninger blev valgt:\n"
-"\t\t %s"
+"\t\t %ls"
 
 #: ../../../core/core_st.cpp:329
 #, fuzzy, c-format
 msgid "\tThe following entries contain search string '%ls' %ls"
 msgstr ""
 "\tDe følgende begrænsninger blev valgt:\n"
-"\t\t %s"
+"\t\t %ls"
 
 #: ../../../core/core_st.cpp:330
 #, fuzzy

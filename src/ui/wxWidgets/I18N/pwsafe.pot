@@ -697,17 +697,17 @@ msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1206
 #, c-format
-msgid "%s files (*.%s;*.jpg)|*.%s;*.jpg|"
+msgid "%ls files (*.%ls;*.jpg)|*.%ls;*.jpg|"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1211
 #, c-format
-msgid "%s files (*.%s;*.gz)|*.%s;*.gz|"
+msgid "%ls files (*.%ls;*.gz)|*.%ls;*.gz|"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1216
 #, c-format
-msgid "%s files (*.%s)|*.%s|"
+msgid "%ls files (*.%ls)|*.%ls|"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1245
@@ -728,17 +728,17 @@ msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
 #, c-format
-msgid "Expires in %d day (%s)"
+msgid "Expires in %d day (%ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
 #, c-format
-msgid "Expires in %d days (%s)"
+msgid "Expires in %d days (%ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1476
 #, c-format
-msgid "Expired on %s"
+msgid "Expired on %ls"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1483
@@ -755,14 +755,14 @@ msgstr ""
 #, c-format
 msgid ""
 "\n"
-"(Next expiration on %s)"
+"(Next expiration on %ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1490
 #, c-format
 msgid ""
 "\n"
-"(Expired on %s)"
+"(Expired on %ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1498
@@ -1352,7 +1352,7 @@ msgstr ""
 
 #: ../../../ui/wxWidgets/DragBarCtrl.cpp:144
 #, c-format
-msgid "Drag this image onto another window to paste the '%s' field."
+msgid "Drag this image onto another window to paste the '%ls' field."
 msgstr ""
 
 #: ../../../ui/wxWidgets/DragBarCtrl.cpp:152
@@ -1874,7 +1874,7 @@ msgstr ""
 msgid ""
 "Error at column %d:\n"
 "\n"
-"%s"
+"%ls"
 msgstr ""
 
 #: ../../../ui/wxWidgets/MenuEditHandlers.cpp:1069
@@ -4868,19 +4868,20 @@ msgstr ""
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2625
 #, c-format
 msgid ""
-"Dropped entry '%s:%s:%s' password points to an entry that is also an alias.\n"
+"Dropped entry '%ls:%ls:%ls' password points to an entry that is also an "
+"alias.\n"
 "\n"
 "The dropped entry now references that entry's base entry."
 msgstr ""
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2632
 #, c-format
-msgid "This alias's target [%s:%s:%s] is not a normal entry."
+msgid "This alias's target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2649
 #, c-format
-msgid "This shortcut's target [%s:%s:%s] is not a normal entry."
+msgid "This shortcut's target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2732 ../../../core/core_st.cpp:110
@@ -5227,7 +5228,7 @@ msgstr ""
 
 #: ../../../core/core_st.cpp:30
 #, c-format
-msgid "This alias' target [%s:%s:%s] is not a normal entry."
+msgid "This alias' target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
 
 #: ../../../core/core_st.cpp:31
@@ -5248,40 +5249,41 @@ msgstr ""
 
 #: ../../../core/core_st.cpp:35
 #, c-format
-msgid "multiple entries exist with title=%s."
+msgid "multiple entries exist with title=%ls."
 msgstr ""
 
 #: ../../../core/core_st.cpp:36
 #, c-format
-msgid "no entry exists with title=%s."
+msgid "no entry exists with title=%ls."
 msgstr ""
 
 #: ../../../core/core_st.cpp:37
 #, c-format
 msgid ""
-"multiple entries exist with title=%s and username=%s or with group=%s and "
-"title=%s."
+"multiple entries exist with title=%ls and username=%ls or with group=%ls "
+"and title=%ls."
 msgstr ""
 
 #: ../../../core/core_st.cpp:38
 #, c-format
 msgid ""
-"no entry exists with title=%s and username=%s or with group=%s, title=%s."
+"no entry exists with title=%ls and username=%ls or with group=%ls, "
+"title=%ls."
 msgstr ""
 
 #: ../../../core/core_st.cpp:39
 #, c-format
-msgid "no entry exists with group=%s, title=%s and username=%s."
+msgid "no entry exists with group=%ls, title=%ls and username=%ls."
 msgstr ""
 
 #: ../../../core/core_st.cpp:40
 #, c-format
-msgid "no entry exists with group=%s, title=%s and empty username."
+msgid "no entry exists with group=%ls, title=%ls and empty username."
 msgstr ""
 
 #: ../../../core/core_st.cpp:41
 #, c-format
-msgid "no entry exists in the root with title=%s and username=%s."
+msgid "no entry exists in the root with title=%ls and username=%ls."
 msgstr ""
 
 #: ../../../core/core_st.cpp:42
@@ -5317,8 +5319,8 @@ msgstr ""
 #: ../../../core/core_st.cpp:50
 #, c-format
 msgid ""
-"The referenced entry '%s:%s:%s' is itself an alias or shortcut. This is not "
-"supported."
+"The referenced entry '%ls:%ls:%ls' is itself an alias or shortcut. This is "
+"not supported."
 msgstr ""
 
 #: ../../../core/core_st.cpp:51
@@ -5549,7 +5551,7 @@ msgstr ""
 
 #: ../../../core/core_st.cpp:116
 #, c-format
-msgid "DB Export from database: '%s'"
+msgid "DB Export from database: '%ls'"
 msgstr ""
 
 #: ../../../core/core_st.cpp:117

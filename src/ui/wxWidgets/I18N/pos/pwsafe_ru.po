@@ -711,18 +711,18 @@ msgstr "Экспортировать вложение"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1206
 #, c-format
-msgid "%s files (*.%s;*.jpg)|*.%s;*.jpg|"
-msgstr "%s файлы (*.%s;*.jpg)|*.%s;*.jpg|"
+msgid "%ls files (*.%ls;*.jpg)|*.%ls;*.jpg|"
+msgstr "%ls файлы (*.%ls;*.jpg)|*.%ls;*.jpg|"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1211
 #, c-format
-msgid "%s files (*.%s;*.gz)|*.%s;*.gz|"
-msgstr "%s файлы (*.%s;*.gz)|*.%s;*.gz|"
+msgid "%ls files (*.%ls;*.gz)|*.%ls;*.gz|"
+msgstr "%ls файлы (*.%ls;*.gz)|*.%ls;*.gz|"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1216
 #, c-format
-msgid "%s files (*.%s)|*.%s|"
-msgstr "%s файлы (*.%s)|*.%s|"
+msgid "%ls files (*.%ls)|*.%ls|"
+msgstr "%ls файлы (*.%ls)|*.%ls|"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1245
 msgid "Failed to allocate required memory to export attachment data."
@@ -742,18 +742,18 @@ msgstr "по умолчанию"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
 #, c-format
-msgid "Expires in %d day (%s)"
-msgstr "Истекает через %d день (%s) "
+msgid "Expires in %d day (%ls)"
+msgstr "Истекает через %d день (%ls) "
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
 #, c-format
-msgid "Expires in %d days (%s)"
-msgstr "Истекает через %d дней (%s)"
+msgid "Expires in %d days (%ls)"
+msgstr "Истекает через %d дней (%ls)"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1476
 #, c-format
-msgid "Expired on %s"
-msgstr "Истёк %s"
+msgid "Expired on %ls"
+msgstr "Истёк %ls"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1483
 #, c-format
@@ -769,19 +769,19 @@ msgstr "Через %d дней после изменения"
 #, c-format
 msgid ""
 "\n"
-"(Next expiration on %s)"
+"(Next expiration on %ls)"
 msgstr ""
 "\n"
-"(Истечёт %s)"
+"(Истечёт %ls)"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1490
 #, c-format
 msgid ""
 "\n"
-"(Expired on %s)"
+"(Expired on %ls)"
 msgstr ""
 "\n"
-"(Истёк %s)"
+"(Истёк %ls)"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1498
 msgid "Never Expires"
@@ -1396,8 +1396,8 @@ msgstr ""
 
 #: ../../../ui/wxWidgets/DragBarCtrl.cpp:144
 #, c-format
-msgid "Drag this image onto another window to paste the '%s' field."
-msgstr "Перетащите изображение на другое окно, чтобы вставить значение поля «%s»."
+msgid "Drag this image onto another window to paste the '%ls' field."
+msgstr "Перетащите изображение на другое окно, чтобы вставить значение поля «%ls»."
 
 #: ../../../ui/wxWidgets/DragBarCtrl.cpp:152 ../../../ui/wxWidgets/GridCtrl.cpp:166
 msgid "User"
@@ -1932,11 +1932,11 @@ msgstr "Невозможно перейти по ссылке"
 msgid ""
 "Error at column %d:\n"
 "\n"
-"%s"
+"%ls"
 msgstr ""
 "Ошибка в столбце %d:\n"
 "\n"
-"%s"
+"%ls"
 
 #: ../../../ui/wxWidgets/MenuEditHandlers.cpp:1069
 msgid "Error parsing Run Command"
@@ -5084,24 +5084,24 @@ msgstr "Перетаскивание"
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2625
 #, c-format
 msgid ""
-"Dropped entry '%s:%s:%s' password points to an entry that is also an alias.\n"
+"Dropped entry '%ls:%ls:%ls' password points to an entry that is also an alias.\n"
 "\n"
 "The dropped entry now references that entry's base entry."
 msgstr ""
-"Скопированный элемент «%s:%s:%s» ссылается на элемент, который является псевдонимом.\n"
+"Скопированный элемент «%ls:%ls:%ls» ссылается на элемент, который является псевдонимом.\n"
 "\n"
 "Скопированный элемент теперь ссылается на исходный элемент."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2632
 #, c-format
-msgid "This alias's target [%s:%s:%s] is not a normal entry."
+msgid "This alias's target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
-"Исходный элемент [%s:%s:%s] для данного псевдонима не является обычным элементом."
+"Исходный элемент [%ls:%ls:%ls] для данного псевдонима не является обычным элементом."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2649
 #, c-format
-msgid "This shortcut's target [%s:%s:%s] is not a normal entry."
-msgstr "Целевой элемент [%s:%s:%s] для данного ярлыка не является обычным элементом."
+msgid "This shortcut's target [%ls:%ls:%ls] is not a normal entry."
+msgstr "Целевой элемент [%ls:%ls:%ls] для данного ярлыка не является обычным элементом."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2732 ../../../core/core_st.cpp:110
 #, c-format
@@ -5487,44 +5487,44 @@ msgstr "псевдонимов"
 
 #: ../../../core/core_st.cpp:35
 #, c-format
-msgid "multiple entries exist with title=%s."
-msgstr "существует несколько элементов с заголовком «%s»."
+msgid "multiple entries exist with title=%ls."
+msgstr "существует несколько элементов с заголовком «%ls»."
 
 #: ../../../core/core_st.cpp:36
 #, c-format
-msgid "no entry exists with title=%s."
-msgstr "не существует элемента с заголовком «%s»."
+msgid "no entry exists with title=%ls."
+msgstr "не существует элемента с заголовком «%ls»."
 
 #: ../../../core/core_st.cpp:37
 #, c-format
 msgid ""
-"multiple entries exist with title=%s and username=%s or with group=%s and title=%s."
+"multiple entries exist with title=%ls and username=%ls or with group=%ls and title=%ls."
 msgstr ""
-"существует несколько элементов с заголовком «%s» и именем пользователя «%s» или с "
-"группой «%s» и заголовком «%s»."
+"существует несколько элементов с заголовком «%ls» и именем пользователя «%ls» или с "
+"группой «%ls» и заголовком «%ls»."
 
 #: ../../../core/core_st.cpp:38
 #, c-format
-msgid "no entry exists with title=%s and username=%s or with group=%s, title=%s."
+msgid "no entry exists with title=%ls and username=%ls or with group=%ls, title=%ls."
 msgstr ""
-"не существует элемента с заголовком «%s» и именем пользователя «%s» или с группой «%s» "
-"и заголовком «%s»."
+"не существует элемента с заголовком «%ls» и именем пользователя «%ls» или с группой «%ls» "
+"и заголовком «%ls»."
 
 #: ../../../core/core_st.cpp:39
 #, c-format
-msgid "no entry exists with group=%s, title=%s and username=%s."
+msgid "no entry exists with group=%ls, title=%ls and username=%ls."
 msgstr ""
-"не существует элемента с группой «%s», заголовком «%s» и именем пользователя «%s»."
+"не существует элемента с группой «%ls», заголовком «%ls» и именем пользователя «%ls»."
 
 #: ../../../core/core_st.cpp:40
 #, c-format
-msgid "no entry exists with group=%s, title=%s and empty username."
-msgstr "не существует элемента без имени пользователя с группой «%s» и заголовком «%s»."
+msgid "no entry exists with group=%ls, title=%ls and empty username."
+msgstr "не существует элемента без имени пользователя с группой «%ls» и заголовком «%ls»."
 
 #: ../../../core/core_st.cpp:41
 #, c-format
-msgid "no entry exists in the root with title=%s and username=%s."
-msgstr "не существует корневого элемента с заголовком «%s» и именем пользователя «%s»."
+msgid "no entry exists in the root with title=%ls and username=%ls."
+msgstr "не существует корневого элемента с заголовком «%ls» и именем пользователя «%ls»."
 
 #: ../../../core/core_st.cpp:42
 msgid "Password implies this is an alias entry, but "
@@ -5560,6 +5560,7 @@ msgstr ""
 "Предполагается, что это псевдоним, но ссылка указывает на безымянный элемент.\n"
 "У каждого элемента должен быть заголовок."
 
+# ???
 #: ../../../core/core_st.cpp:50
 #, c-format
 msgid ""
@@ -5857,8 +5858,8 @@ msgstr "в течение %d дней"
 # описание для нового контейнера
 #: ../../../core/core_st.cpp:116
 #, c-format
-msgid "DB Export from database: '%s'"
-msgstr "Экспортировано из контейнера: '%s'"
+msgid "DB Export from database: '%ls'"
+msgstr "Экспортировано из контейнера: '%ls'"
 
 #: ../../../core/core_st.cpp:117
 msgid "First character of variable name must be alphabetic"

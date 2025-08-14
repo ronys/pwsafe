@@ -733,17 +733,17 @@ msgstr "Exporter du texte"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1206
 #, c-format
-msgid "%s files (*.%s;*.jpg)|*.%s;*.jpg|"
+msgid "%ls files (*.%ls;*.jpg)|*.%ls;*.jpg|"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1211
 #, c-format
-msgid "%s files (*.%s;*.gz)|*.%s;*.gz|"
+msgid "%ls files (*.%ls;*.gz)|*.%ls;*.gz|"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1216
 #, fuzzy, c-format
-msgid "%s files (*.%s)|*.%s|"
+msgid "%ls files (*.%ls)|*.%ls|"
 msgstr "Fichiers XML (*.xml)|*.xml||"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1245
@@ -765,17 +765,17 @@ msgstr "défaut"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
 #, fuzzy, c-format
-msgid "Expires in %d day (%s)"
+msgid "Expires in %d day (%ls)"
 msgstr "dans %d jour(s)"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
 #, fuzzy, c-format
-msgid "Expires in %d days (%s)"
+msgid "Expires in %d days (%ls)"
 msgstr "dans %d jour(s)"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1476
 #, c-format
-msgid "Expired on %s"
+msgid "Expired on %ls"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1483
@@ -792,14 +792,14 @@ msgstr ""
 #, c-format
 msgid ""
 "\n"
-"(Next expiration on %s)"
+"(Next expiration on %ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1490
 #, c-format
 msgid ""
 "\n"
-"(Expired on %s)"
+"(Expired on %ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1498
@@ -1267,12 +1267,12 @@ msgstr ""
 #: ../../../ui/wxWidgets/CompareDlg.cpp:921
 #, fuzzy, c-format
 msgid "Entries only in current database (%ls):"
-msgstr "Entrées seulement dans la base courante(%s):"
+msgstr "Entrées seulement dans la base courante(%ls):"
 
 #: ../../../ui/wxWidgets/CompareDlg.cpp:934
 #, fuzzy, c-format
 msgid "Entries only in comparison database (%ls):"
-msgstr "Entrées uniquement dans le fichier de comparaison (%s):"
+msgstr "Entrées uniquement dans le fichier de comparaison (%ls):"
 
 #: ../../../ui/wxWidgets/CompareDlg.cpp:947
 msgid "Entries in both databases but with differences:"
@@ -1468,8 +1468,8 @@ msgstr "Glissez cette image sur une autre fenêtre pour coller le champ '%s'."
 
 #: ../../../ui/wxWidgets/DragBarCtrl.cpp:144
 #, fuzzy, c-format
-msgid "Drag this image onto another window to paste the '%s' field."
-msgstr "Glissez cette image sur une autre fenêtre pour coller le champ '%s'."
+msgid "Drag this image onto another window to paste the '%ls' field."
+msgstr "Glissez cette image sur une autre fenêtre pour coller le champ '%ls'."
 
 #: ../../../ui/wxWidgets/DragBarCtrl.cpp:152 ../../../ui/wxWidgets/GridCtrl.cpp:166
 #, fuzzy
@@ -2034,11 +2034,11 @@ msgstr "Incapable d'afficher l'URL"
 msgid ""
 "Error at column %d:\n"
 "\n"
-"%s"
+"%ls"
 msgstr ""
 "Erreur dans la colonne %d:\n"
 "\n"
-"%s"
+"%ls"
 
 #: ../../../ui/wxWidgets/MenuEditHandlers.cpp:1069
 msgid "Error parsing Run Command"
@@ -2736,7 +2736,7 @@ msgstr ""
 #: ../../../ui/wxWidgets/MenuManageHandlers.cpp:475
 #, fuzzy, c-format
 msgid " [Process ID=%ls]"
-msgstr " [Process ID=%s]"
+msgstr " [Process ID=%ls]"
 
 #: ../../../ui/wxWidgets/MenuManageHandlers.cpp:481
 #, fuzzy, c-format
@@ -2746,7 +2746,7 @@ msgid ""
 "(Only one R/W access at a time is allowed)"
 msgstr ""
 "Impossible de changer de L-S à L-E car le fichier est déjà ouvert en L-E par:\n"
-"%s %s\n"
+"%ls %ls\n"
 "(Un seul accès L-E n'est permis)"
 
 #: ../../../ui/wxWidgets/MenuManageHandlers.cpp:487
@@ -5401,28 +5401,29 @@ msgstr ""
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2625
 #, c-format
 msgid ""
-"Dropped entry '%s:%s:%s' password points to an entry that is also an alias.\n"
+"Dropped entry '%ls:%ls:%ls' password points to an entry that is also an "
+"alias.\n"
 "\n"
 "The dropped entry now references that entry's base entry."
 msgstr ""
-"Entrée '%s:%s:%s' ignorée, le mot de passe pointe sur une entrée qui est aussi un "
+"Entrée '%ls:%ls:%ls' ignorée, le mot de passe pointe sur une entrée qui est aussi un "
 "alias.\n"
 "\n"
 "L'entrée ignorée référence désormais cette entrée de base de l'entrée."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2632
 #, fuzzy, c-format
-msgid "This alias's target [%s:%s:%s] is not a normal entry."
+msgid "This alias's target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
-"La cible de cet alias [%s:%s:%s] n'est pas une entrée normale ou est déjà la base d'un "
-"alias."
+"La cible de cet alias [%ls:%ls:%ls] n'est pas une entrée normale ou est déjà la base "
+"d'un alias."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2649
 #, fuzzy, c-format
-msgid "This shortcut's target [%s:%s:%s] is not a normal entry."
+msgid "This shortcut's target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
-"La cible de ce raccourci [%s:%s:%s] n'est pas une entrée normale ou est déjà une base "
-"de raccourci."
+"La cible de ce raccourci [%ls:%ls:%ls] n'est pas une entrée normale ou est déjà une "
+"base de raccourci."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2732 ../../../core/core_st.cpp:110
 #, c-format
@@ -5850,10 +5851,10 @@ msgstr "OutOfMemoryException."
 
 #: ../../../core/core_st.cpp:30
 #, fuzzy, c-format
-msgid "This alias' target [%s:%s:%s] is not a normal entry."
+msgid "This alias's target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
-"La cible de cet alias [%s:%s:%s] n'est pas une entrée normale ou est déjà la base d'un "
-"alias."
+"La cible de cet alias [%ls:%ls:%ls] n'est pas une entrée normale ou est déjà la base "
+"d'un alias."
 
 #: ../../../core/core_st.cpp:31
 msgid "after"
@@ -5873,43 +5874,43 @@ msgstr "alias"
 
 #: ../../../core/core_st.cpp:35
 #, c-format
-msgid "multiple entries exist with title=%s."
-msgstr "De multiples entrées éxistent avec titre=%s."
+msgid "multiple entries exist with title=%ls."
+msgstr "De multiples entrées éxistent avec titre=%ls."
 
 #: ../../../core/core_st.cpp:36
 #, c-format
-msgid "no entry exists with title=%s."
-msgstr "aucune entrée n'existe avec comme titre %s."
+msgid "no entry exists with title=%ls."
+msgstr "aucune entrée n'existe avec comme titre %ls."
 
 #: ../../../core/core_st.cpp:37
 #, c-format
 msgid ""
-"multiple entries exist with title=%s and username=%s or with group=%s and title=%s."
+"multiple entries exist with title=%ls and username=%ls or with group=%ls and title=%ls."
 msgstr ""
-"Plusieurs entrées existent pour titre=%s et nom d'utilisateur=%s ou pour groupe=%s et "
-"titre=%s."
+"Plusieurs entrées existent pour titre=%ls et nom d'utilisateur=%ls ou pour groupe=%ls "
+"et titre=%ls."
 
 #: ../../../core/core_st.cpp:38
 #, c-format
-msgid "no entry exists with title=%s and username=%s or with group=%s, title=%s."
+msgid "no entry exists with title=%ls and username=%ls or with group=%ls, title=%ls."
 msgstr ""
-"aucune entrée n'existe avec comme titre %s et comme nom d'utilisateur %s ou groupe %s, "
-"titre=%s."
+"aucune entrée n'existe avec comme titre %ls et comme nom d'utilisateur %ls ou groupe "
+"%ls, titre=%ls."
 
 #: ../../../core/core_st.cpp:39
 #, c-format
-msgid "no entry exists with group=%s, title=%s and username=%s."
-msgstr "aucune entrée n'existe pour groupe=%s, titre=%s et nom d'utilisateur=%s."
+msgid "no entry exists with group=%ls, title=%ls and username=%ls."
+msgstr "aucune entrée n'existe pour groupe=%ls, titre=%ls et nom d'utilisateur=%ls."
 
 #: ../../../core/core_st.cpp:40
 #, c-format
-msgid "no entry exists with group=%s, title=%s and empty username."
-msgstr "aucune entrée n'existe pour groupe=%s, titre=%s et nom d'utilisateur vide."
+msgid "no entry exists with group=%ls, title=%ls and empty username."
+msgstr "aucune entrée n'existe pour groupe=%ls, titre=%ls et nom d'utilisateur vide."
 
 #: ../../../core/core_st.cpp:41
 #, c-format
-msgid "no entry exists in the root with title=%s and username=%s."
-msgstr "aucune entrée n'existe pour titre=%s et nom d'utilisateur=%s."
+msgid "no entry exists in the root with title=%ls and username=%ls."
+msgstr "aucune entrée n'existe pour titre=%ls et nom d'utilisateur=%ls."
 
 #: ../../../core/core_st.cpp:42
 msgid "Password implies this is an alias entry, but "
@@ -5951,7 +5952,8 @@ msgstr ""
 #: ../../../core/core_st.cpp:50
 #, c-format
 msgid ""
-"The referenced entry '%s:%s:%s' is itself an alias or shortcut. This is not supported."
+"The referenced entry '%ls:%ls:%ls' is itself an alias or shortcut. This is not "
+"supported."
 msgstr ""
 
 #: ../../../core/core_st.cpp:51
@@ -6065,14 +6067,14 @@ msgid ""
 "\t %ls\n"
 msgstr ""
 "Comparaison complète de la base courante:\n"
-"\t %s\n"
+"\t %ls\n"
 " et:\n"
-"\t %s"
+"\t %ls"
 
 #: ../../../core/core_st.cpp:65
 #, fuzzy, c-format
 msgid "\tGroup:'%ls'; Title:'%ls'; User:'%ls'"
-msgstr "\tGroupe:'%s'; Titre:'%s'; Usager:'%s'"
+msgstr "\tGroupe:'%ls'; Titre:'%ls'; Usager:'%ls'"
 
 #: ../../../core/core_st.cpp:66
 msgid "C:F[R-O]"
@@ -6178,7 +6180,7 @@ msgstr " Glisser # %d"
 #: ../../../core/core_st.cpp:101
 #, fuzzy, c-format
 msgid "%ls - Drag & Drop %ls"
-msgstr "%ls - Copié %ls"
+msgstr "%ls - Drag & Drop %ls"
 
 #: ../../../core/core_st.cpp:102
 #, c-format
@@ -6227,8 +6229,8 @@ msgstr "dans %d jour(s)"
 
 #: ../../../core/core_st.cpp:116
 #, fuzzy, c-format
-msgid "DB Export from database: '%s'"
-msgstr "Fusion de : %s\n"
+msgid "DB Export from database: '%ls'"
+msgstr "Fusion de : %ls\n"
 
 #: ../../../core/core_st.cpp:117
 msgid "First character of variable name must be alphabetic"
@@ -7196,12 +7198,12 @@ msgstr ""
 #: ../../../core/core_st.cpp:328
 #, fuzzy, c-format
 msgid "\tNo entries were found containing search string '%ls' %ls"
-msgstr "\tAucune entrée contenant '%s' n'a été trouvé"
+msgstr "\tAucune entrée contenant '%ls' %ls n'a été trouvé"
 
 #: ../../../core/core_st.cpp:329
 #, fuzzy, c-format
 msgid "\tThe following entries contain search string '%ls' %ls"
-msgstr "\tLes entrées suivantes contiennent le texte recherché '%s'"
+msgstr "\tLes entrées suivantes contiennent le texte recherché '%ls' %ls"
 
 #: ../../../core/core_st.cpp:330
 #, fuzzy

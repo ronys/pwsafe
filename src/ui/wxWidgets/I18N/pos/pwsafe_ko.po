@@ -749,17 +749,17 @@ msgstr "텍스트 보내기"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1206
 #, c-format
-msgid "%s files (*.%s;*.jpg)|*.%s;*.jpg|"
+msgid "%ls files (*.%ls;*.jpg)|*.%ls;*.jpg|"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1211
 #, c-format
-msgid "%s files (*.%s;*.gz)|*.%s;*.gz|"
+msgid "%ls files (*.%ls;*.gz)|*.%ls;*.gz|"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1216
 #, fuzzy, c-format
-msgid "%s files (*.%s)|*.%s|"
+msgid "%ls files (*.%ls)|*.%ls|"
 msgstr "XML 파일 (*.xml)|*.xml||"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1245
@@ -781,18 +781,18 @@ msgid "default"
 msgstr "기본값 사용"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
-#, fuzzy, c-format
-msgid "Expires in %d day (%s)"
+#, c-format
+msgid "Expires in %d day (%ls)"
 msgstr "within %d day(s)"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
-#, fuzzy, c-format
-msgid "Expires in %d days (%s)"
+#, c-format
+msgid "Expires in %d days (%ls)"
 msgstr "within %d day(s)"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1476
 #, c-format
-msgid "Expired on %s"
+msgid "Expired on %ls"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1483
@@ -809,14 +809,14 @@ msgstr ""
 #, c-format
 msgid ""
 "\n"
-"(Next expiration on %s)"
+"(Next expiration on %ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1490
 #, c-format
 msgid ""
 "\n"
-"(Expired on %s)"
+"(Expired on %ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1498
@@ -929,15 +929,13 @@ msgstr "확인:"
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:2167
 #, c-format
 msgid "This entry must have a %ls"
-msgstr ""
+msgstr "이 항목은 %ls를 가져야 합니다"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:2168
-#, fuzzy
 msgid "title"
 msgstr "주제"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:2168
-#, fuzzy
 msgid "password"
 msgstr "비밀번호"
 
@@ -1235,7 +1233,7 @@ msgid "Current safe was opened read-only"
 msgstr "읽기 전용 모드로 열기"
 
 #: ../../../ui/wxWidgets/CompareDlg.cpp:817
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The database:\n"
 "\n"
@@ -1281,14 +1279,14 @@ msgstr ""
 "기본 필드 혹은 선택된 필드로 비교한 결과 동일한 데이터베이스입니다!"
 
 #: ../../../ui/wxWidgets/CompareDlg.cpp:921
-#, fuzzy, c-format
+#, c-format
 msgid "Entries only in current database (%ls):"
-msgstr "현재 데이터베이스에만 존재하는 항목들(%s):"
+msgstr "현재 데이터베이스에만 존재하는 항목들(%ls):"
 
 #: ../../../ui/wxWidgets/CompareDlg.cpp:934
-#, fuzzy, c-format
+#, c-format
 msgid "Entries only in comparison database (%ls):"
-msgstr "비교 데이터베이스에만 존재하는 항목들(%s):"
+msgstr "비교 데이터베이스에만 존재하는 항목들(%ls):"
 
 #: ../../../ui/wxWidgets/CompareDlg.cpp:947
 msgid "Entries in both databases but with differences:"
@@ -2065,11 +2063,11 @@ msgstr "URL을 표시할 수 없습니다"
 msgid ""
 "Error at column %d:\n"
 "\n"
-"%s"
+"%ls"
 msgstr ""
-"%d행에서 오류 발생:\n"
+"%d열에서 오류 발생:\n"
 "\n"
-"%s"
+"%ls"
 
 #: ../../../ui/wxWidgets/MenuEditHandlers.cpp:1069
 msgid "Error parsing Run Command"
@@ -2240,7 +2238,7 @@ msgstr ""
 "Password Safe 데이터베이스 (*.psafe3; *.dat)|*.psafe3; *.dat|모든 파일 (*.*)|*.*||"
 
 #: ../../../ui/wxWidgets/MenuFileHandlers.cpp:471
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%ls\n"
 "\n"
@@ -2392,7 +2390,7 @@ msgstr "텍스트 불러오기 실패"
 
 #: ../../../ui/wxWidgets/MenuFileHandlers.cpp:907
 #: ../../../ui/wxWidgets/MenuFileHandlers.cpp:1038
-#, fuzzy, c-format
+#, c-format
 msgid "%ls file being imported: %ls"
 msgstr "%ls 파일을 불러왔습니다: %ls"
 
@@ -2510,7 +2508,7 @@ msgid "Import XML failed"
 msgstr "XML 설정 불러오기 실패"
 
 #: ../../../ui/wxWidgets/MenuFileHandlers.cpp:1013 ../../../core/core_st.cpp:275
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Can't find XML Schema Definition file (%ls) in your PasswordSafe Application "
 "Directory.\n"
@@ -2533,7 +2531,7 @@ msgid "XML"
 msgstr "XML"
 
 #: ../../../ui/wxWidgets/MenuFileHandlers.cpp:1058
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "File: %ls failed validation against XML Schema:\n"
 "\n"
@@ -2544,7 +2542,7 @@ msgstr ""
 "%ls"
 
 #: ../../../ui/wxWidgets/MenuFileHandlers.cpp:1063
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "File: %ls passed Validation but had the following errors during import:\n"
 "\n"
@@ -2586,7 +2584,7 @@ msgid " / renamed %d"
 msgstr " / %d 이름이 변경됨"
 
 #: ../../../ui/wxWidgets/MenuFileHandlers.cpp:1105
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "File: %ls was imported (entries validated %d / imported %d%ls%ls%ls). See report for "
 "details."
@@ -2636,13 +2634,13 @@ msgid "Import a KeePass Text File"
 msgstr "텍스트 불러오기(&T)"
 
 #: ../../../ui/wxWidgets/MenuFileHandlers.cpp:1174
-#, fuzzy, c-format
+#, c-format
 msgid "Text file being imported: %ls"
 msgstr "파일을 불러왔습니다: %ls"
 
 #: ../../../ui/wxWidgets/MenuFileHandlers.cpp:1191
 #: ../../../ui/wxWidgets/SyncWizard.cpp:657
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%ls\n"
 "\n"
@@ -2657,7 +2655,7 @@ msgid "File open error"
 msgstr "파일 열기 오류"
 
 #: ../../../ui/wxWidgets/MenuFileHandlers.cpp:1206
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%ls\n"
 "\n"
@@ -2745,9 +2743,9 @@ msgid ""
 msgstr ""
 
 #: ../../../ui/wxWidgets/MenuManageHandlers.cpp:475
-#, fuzzy, c-format
+#, c-format
 msgid " [Process ID=%ls]"
-msgstr " [프로세스 ID=%s]"
+msgstr " [프로세스 ID=%ls]"
 
 #: ../../../ui/wxWidgets/MenuManageHandlers.cpp:481
 #, c-format
@@ -4189,7 +4187,7 @@ msgid " empty)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/PropertiesDlg.cpp:172 ../../../core/core_st.cpp:365
-#, fuzzy, c-format
+#, c-format
 msgid "%ls on %ls"
 msgstr "%ls - %ls중에서"
 
@@ -4202,7 +4200,7 @@ msgid "No"
 msgstr "아니오"
 
 #: ../../../ui/wxWidgets/PropertiesDlg.cpp:224 ../../../core/core_st.cpp:360
-#, fuzzy, c-format
+#, c-format
 msgid "In Headers(%ls)/In Entries("
 msgstr "In Headers(%ls)/In Entries("
 
@@ -5217,7 +5215,7 @@ msgid "Synchronization completed successfully"
 msgstr "성공적으로 완료했습니다"
 
 #: ../../../ui/wxWidgets/SyncWizard.cpp:659
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%ls\n"
 "\n"
@@ -5231,7 +5229,7 @@ msgstr ""
 "이대로 진행하시겠습니까?"
 
 #: ../../../ui/wxWidgets/SyncWizard.cpp:661
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%ls\n"
 "\n"
@@ -5242,7 +5240,7 @@ msgstr ""
 "알 수 없는 오류"
 
 #: ../../../ui/wxWidgets/SyncWizard.cpp:695
-#, fuzzy, c-format
+#, c-format
 msgid "Synchronizing from database: %ls\n"
 msgstr "데이터베이스로부터 동기화 중: %ls\n"
 
@@ -5428,25 +5426,25 @@ msgstr ""
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2625
 #, c-format
 msgid ""
-"Dropped entry '%s:%s:%s' password points to an entry that is also an alias.\n"
+"Dropped entry '%ls:%ls:%ls' password points to an entry that is also an alias.\n"
 "\n"
 "The dropped entry now references that entry's base entry."
 msgstr ""
-"끊어진 항목 '%s:%s:%s' 의 비밀번호가 이미 보조 항목의 속성을 가진 항목을 가리키고 있습"
+"끊어진 항목 '%ls:%ls:%ls' 의 비밀번호가 이미 보조 항목의 속성을 가진 항목을 가리키고 있습"
 "니다.\n"
 "\n"
 "끊어진 항목은 지금부터 그 항목의 기본 항목을 참조하게 됩니다."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2632
-#, fuzzy, c-format
-msgid "This alias's target [%s:%s:%s] is not a normal entry."
-msgstr "이 보조 항목의 대상 [%s:%s:%s] 이 일반 항목이 아니거나 이미 보조 항목입니다."
+#, c-format
+msgid "This alias's target [%ls:%ls:%ls] is not a normal entry."
+msgstr "이 보조 항목의 대상 [%ls:%ls:%ls] 이 일반 항목이 아니거나 이미 보조 항목입니다."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2649
-#, fuzzy, c-format
-msgid "This shortcut's target [%s:%s:%s] is not a normal entry."
+#, c-format
+msgid "This shortcut's target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
-"이 바로가기 항목 [%s:%s:%s] 의 상대가 일반 항목이 아니거나 이미 바로가기 항목입니다."
+"이 바로가기 항목 [%ls:%ls:%ls] 의 상대가 일반 항목이 아니거나 이미 바로가기 항목입니다."
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2732 ../../../core/core_st.cpp:110
 #, c-format
@@ -5878,9 +5876,9 @@ msgid "OutOfMemoryException."
 msgstr "메모리 예외 초과"
 
 #: ../../../core/core_st.cpp:30
-#, fuzzy, c-format
-msgid "This alias' target [%s:%s:%s] is not a normal entry."
-msgstr "이 보조 항목의 대상 [%s:%s:%s] 이 일반 항목이 아니거나 이미 보조 항목입니다."
+#, c-format
+msgid "This alias's target [%ls:%ls:%ls] is not a normal entry."
+msgstr "이 보조 항목의 대상 [%ls:%ls:%ls] 이 일반 항목이 아니거나 이미 보조 항목입니다."
 
 #: ../../../core/core_st.cpp:31
 msgid "after"
@@ -5911,29 +5909,29 @@ msgstr "no entry exists with title=%s."
 #: ../../../core/core_st.cpp:37
 #, c-format
 msgid ""
-"multiple entries exist with title=%s and username=%s or with group=%s and title=%s."
+"multiple entries exist with title=%ls and username=%ls or with group=%ls and title=%ls."
 msgstr ""
-"multiple entries exist with title=%s and username=%s or with group=%s and title=%s."
+"multiple entries exist with title=%ls and username=%ls or with group=%ls and title=%ls."
 
 #: ../../../core/core_st.cpp:38
 #, c-format
-msgid "no entry exists with title=%s and username=%s or with group=%s, title=%s."
-msgstr "no entry exists with title=%s and username=%s or with group=%s, title=%s."
+msgid "no entry exists with title=%ls and username=%ls or with group=%ls, title=%ls."
+msgstr "no entry exists with title=%ls and username=%ls or with group=%ls, title=%ls."
 
 #: ../../../core/core_st.cpp:39
 #, c-format
-msgid "no entry exists with group=%s, title=%s and username=%s."
-msgstr "no entry exists with group=%s, title=%s and username=%s."
+msgid "no entry exists with group=%ls, title=%ls and username=%ls."
+msgstr "no entry exists with group=%ls, title=%ls and username=%ls."
 
 #: ../../../core/core_st.cpp:40
 #, c-format
-msgid "no entry exists with group=%s, title=%s and empty username."
-msgstr "no entry exists with group=%s, title=%s and empty username."
+msgid "no entry exists with group=%ls, title=%ls and empty username."
+msgstr "no entry exists with group=%ls, title=%ls and empty username."
 
 #: ../../../core/core_st.cpp:41
 #, c-format
-msgid "no entry exists in the root with title=%s and username=%s."
-msgstr "no entry exists in the root with title=%s and username=%s."
+msgid "no entry exists in the root with title=%ls and username=%ls."
+msgstr "no entry exists in the root with title=%ls and username=%ls."
 
 #: ../../../core/core_st.cpp:42
 msgid "Password implies this is an alias entry, but "
@@ -6072,7 +6070,7 @@ msgid "(case sensitive)"
 msgstr "(대소문자 구별)"
 
 #: ../../../core/core_st.cpp:64
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Compare complete of current database:\n"
 "\t %ls\n"
@@ -6080,14 +6078,14 @@ msgid ""
 "\t %ls\n"
 msgstr ""
 "현재 데이터베이스의 비교 완료\n"
-"\t %s\n"
+"\t %ls\n"
 " 그리고:\n"
-"\t %s"
+"\t %ls\n"
 
 #: ../../../core/core_st.cpp:65
-#, fuzzy, c-format
+#, c-format
 msgid "\tGroup:'%ls'; Title:'%ls'; User:'%ls'"
-msgstr "\t그룹:'%s'; 제목:'%s'; 사용자 이름:'%s'"
+msgstr "\t그룹:'%ls'; 제목:'%ls'; 사용자 이름:'%ls'"
 
 #: ../../../core/core_st.cpp:66
 msgid "C:F[R-O]"
@@ -6210,7 +6208,7 @@ msgid "empty groups"
 msgstr "#groups"
 
 #: ../../../core/core_st.cpp:105
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Trouble with a non-textual (e.g., time) field in record '%ls' - please check data "
 "carefully."
@@ -6338,7 +6336,7 @@ msgid "Cannot read file. Please check file permissions."
 msgstr "파일을 읽을 수 없습니다. 파일 권한을 점검해 보십시오."
 
 #: ../../../core/core_st.cpp:140
-#, fuzzy, c-format
+#, c-format
 msgid "Filter %ls already exists in the database, do you wish to replace it with this?"
 msgstr "%ls 필터가 이미 데이터베이스에 존재합니다만, 이 것으로 교체하시겠습니까?"
 
@@ -6584,7 +6582,7 @@ msgid ""
 msgstr ""
 
 #: ../../../core/core_st.cpp:204
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%ls, Title=\"%ls\", User=\"%ls\" already exists in your database or in the Import "
 "file. Added imported entry with title=\"%ls\".\n"
@@ -6593,7 +6591,7 @@ msgstr ""
 "불러온 항목에 다음과 같이 주제를 추가했습니다=\"%ls\".\n"
 
 #: ../../../core/core_st.cpp:205
-#, fuzzy, c-format
+#, c-format
 msgid "Entry on line %d with Group=\"%ls\""
 msgstr "Entry on line %d with Group=\"%ls\""
 
@@ -6603,7 +6601,7 @@ msgid "Entry on line %d with no group"
 msgstr "%d 행의 그룹이 없는 항목"
 
 #: ../../../core/core_st.cpp:207
-#, fuzzy, c-format
+#, c-format
 msgid "Entry with Group=\"%ls\""
 msgstr "\"%ls\" 그룹의 항목"
 
@@ -6627,7 +6625,7 @@ msgid "Empty line %d skipped"
 msgstr "비어있는 %d째 줄이 생략됨"
 
 #: ../../../core/core_st.cpp:212
-#, fuzzy, c-format
+#, c-format
 msgid "Entry %ls%d with Group=\"%ls\", Title=\"%ls\", User=\"%ls\""
 msgstr "Entry %ls%d with Group=\"%ls\", Title=\"%ls\", User=\"%ls\""
 
@@ -6645,7 +6643,7 @@ msgid "Invalid field delimiter: must be within ASCII range."
 msgstr ""
 
 #: ../../../core/core_st.cpp:216
-#, fuzzy, c-format
+#, c-format
 msgid "Entry of line %d has an invalid \"%ls\" field. It has been ignored."
 msgstr ""
 "%d 행에 있는 항목이 잘못된 \"%ls\" 필드값을 가지고 잇습니다. 이 항목은 무시될 것입니다."
@@ -6707,9 +6705,9 @@ msgid " Import # %d"
 msgstr "# %d 을(를) 불러오기"
 
 #: ../../../core/core_st.cpp:227
-#, fuzzy, c-format
+#, c-format
 msgid "%ls - Imported %ls"
-msgstr "%ls - 복사됨 %ls"
+msgstr "%ls - 불러옴 %ls"
 
 #: ../../../core/core_st.cpp:228
 msgid ""
@@ -6722,17 +6720,17 @@ msgstr ""
 "다."
 
 #: ../../../core/core_st.cpp:229
-#, fuzzy, c-format
+#, c-format
 msgid "%ls not found. Cannot update entry's password.\n"
 msgstr "%ls 가 발견되지 않았습니다. 항목의 비밀번호를 갱신할 수 없습니다.\n"
 
 #: ../../../core/core_st.cpp:230
-#, fuzzy, c-format
+#, c-format
 msgid "%ls has an empty %ls.\n"
 msgstr "%ls 항목이 비었습니다 %ls.\n"
 
 #: ../../../core/core_st.cpp:231
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Entry \"%ls, %ls, %ls\" has a password in the correct form for an alias, but the base "
 "entry is already an alias."
@@ -6745,7 +6743,7 @@ msgid "\tThis entry has been made an alias of associated base entry."
 msgstr "\t이 항목은 연관된 기본 항목의 보조 항목으로 만들어졌습니다."
 
 #: ../../../core/core_st.cpp:233
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Entry \"%ls, %ls, %ls\" has a password in the correct form for an alias, but the base "
 "entry does not exist."
@@ -6758,7 +6756,7 @@ msgid "\tThis entry remains a normal entry and the password has not been changed
 msgstr "\t이 항목은 일반 항목으로 남아 있고 비밀번호는 변경되지 않았습니다."
 
 #: ../../../core/core_st.cpp:235
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The %ls entry \"%ls, %ls, %ls\" doesn't point to a normal or existing %ls base entry. "
 "It cannot be imported."
@@ -6805,9 +6803,9 @@ msgid "  Invalid header: '%ls' (must be 5 hexadecimal characters)."
 msgstr ""
 
 #: ../../../core/core_st.cpp:245
-#, fuzzy, c-format
+#, c-format
 msgid "Invalid lock file \"%ls\"."
-msgstr "잘못된 필터 스키마"
+msgstr "잘못된 잠금 파일 \"%ls\"."
 
 #: ../../../core/core_st.cpp:246
 #, c-format
@@ -7079,11 +7077,9 @@ msgid "Use uppercase characters"
 msgstr "최소 대문자 개수"
 
 #: ../../../core/core_st.cpp:301
-#, fuzzy, c-format
+#, c-format
 msgid "Error in a Password History %ls:"
-msgstr ""
-"\n"
-"비밀번호 내역의 다음 항목에서 에러가 발생했습니다: »%ls»%ls»%ls»: "
+msgstr "비밀번호 내역 %ls에서 오류:"
 
 #: ../../../core/core_st.cpp:302
 #, c-format
@@ -7116,17 +7112,17 @@ msgid ""
 msgstr ""
 
 #: ../../../core/core_st.cpp:309
-#, fuzzy, c-format
+#, c-format
 msgid "%ls%ls%ls_Report.txt"
 msgstr "%ls%ls%ls_보고서.txt"
 
 #: ../../../core/core_st.cpp:310
-#, fuzzy, c-format
+#, c-format
 msgid "Report of %ls function started at %ls"
 msgstr "%ls 의 보고서 기능이 %ls에 시작했습니다."
 
 #: ../../../core/core_st.cpp:311
-#, fuzzy, c-format
+#, c-format
 msgid "on database %ls"
 msgstr "on database %ls"
 
@@ -7182,7 +7178,7 @@ msgid "Fatal Error"
 msgstr "치명적 오류"
 
 #: ../../../core/core_st.cpp:327
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Error in Password History for entry: »%ls»%ls»%ls»: "
@@ -7191,18 +7187,14 @@ msgstr ""
 "비밀번호 내역의 다음 항목에서 에러가 발생했습니다: »%ls»%ls»%ls»: "
 
 #: ../../../core/core_st.cpp:328
-#, fuzzy, c-format
+#, c-format
 msgid "\tNo entries were found containing search string '%ls' %ls"
-msgstr ""
-"\t다음 제약조건이 선택되었습니다:\n"
-"\t\t %s"
+msgstr "\t'%ls' %ls 검색 문자열을 포함하는 항목을 찾을 수 없습니다"
 
 #: ../../../core/core_st.cpp:329
-#, fuzzy, c-format
+#, c-format
 msgid "\tThe following entries contain search string '%ls' %ls"
-msgstr ""
-"\t다음 제약조건이 선택되었습니다:\n"
-"\t\t %s"
+msgstr "\t다음 항목들은 '%ls' %ls' 검색 문자열을 포함합니다"
 
 #: ../../../core/core_st.cpp:330
 #, fuzzy
@@ -7284,9 +7276,9 @@ msgid "Double-Click on entry to View/Edit it"
 msgstr "항목을 더블클릭하여 편집하기"
 
 #: ../../../core/core_st.cpp:351
-#, fuzzy, c-format
+#, c-format
 msgid "%ls - Sync'd %ls"
-msgstr "%ls - %ls중에서"
+msgstr "%ls - 동기화됨 %ls"
 
 #: ../../../core/core_st.cpp:352
 msgid "System error: No more file handles available"
@@ -7347,13 +7339,12 @@ msgstr ""
 "다음 항목이 잘못된 UUID 항목 값을 가지고 있습니다. 이 항목은 다시 교정되었습니다."
 
 #: ../../../core/core_st.cpp:368
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The following entries have passwords in the correct form for %ls, but the base entry "
 "does not exist."
 msgstr ""
-"Entry \"%ls, %ls, %ls\" 가 보조 항목에 대한 올바른 비밀번호를 가지고 있으나, 기본 항목"
-"이 존재하지 않습니다."
+"다음 항목들은 %ls에 대해 올바른 형식의 암호를 가지고 있지만 기본 항목이 존재하지 않습니다."
 
 #: ../../../core/core_st.cpp:369
 msgid "The following entries were duplicates of an existing entry."
@@ -7366,12 +7357,11 @@ msgstr ""
 "다음 항목이 잘못된 UUID 항목 값을 가지고 있습니다. 이 항목은 다시 교정되었습니다."
 
 #: ../../../core/core_st.cpp:371
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The following entries had an empty Password field, which is not permitted. The "
 "password has been set to '%ls'"
-msgstr ""
-"다음 항목이 잘못된 UUID 항목 값을 가지고 있습니다. 이 항목은 다시 교정되었습니다."
+msgstr "다음 항목에 빈 암호 필드가 있어 허용되지 않습니다. 암호가 '%ls'로 설정되었습니다."
 
 #: ../../../core/core_st.cpp:372
 #, fuzzy

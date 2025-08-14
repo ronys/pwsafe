@@ -5,7 +5,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PasswordSafe ITA v0.94\n"
+"Project-Id-Version: PasswordSafe ITA v0.94-JULES-TEST\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-21 21:42+0300\n"
 "PO-Revision-Date: 2025-07-23 11:48+0300\n"
@@ -722,17 +722,17 @@ msgstr "Esportazione Testo"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1206
 #, c-format
-msgid "%s files (*.%s;*.jpg)|*.%s;*.jpg|"
+msgid "%ls files (*.%ls;*.jpg)|*.%ls;*.jpg|"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1211
 #, c-format
-msgid "%s files (*.%s;*.gz)|*.%s;*.gz|"
+msgid "%ls files (*.%ls;*.gz)|*.%ls;*.gz|"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1216
 #, fuzzy, c-format
-msgid "%s files (*.%s)|*.%s|"
+msgid "%ls files (*.%ls)|*.%ls|"
 msgstr "File XML (*.xml)|*.xml"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1245
@@ -753,17 +753,17 @@ msgstr "predefinito"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
 #, fuzzy, c-format
-msgid "Expires in %d day (%s)"
+msgid "Expires in %d day (%ls)"
 msgstr "(ogni %d giorni)"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1473
 #, fuzzy, c-format
-msgid "Expires in %d days (%s)"
+msgid "Expires in %d days (%ls)"
 msgstr "(ogni %d giorni)"
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1476
 #, c-format
-msgid "Expired on %s"
+msgid "Expired on %ls"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1483
@@ -780,14 +780,14 @@ msgstr ""
 #, c-format
 msgid ""
 "\n"
-"(Next expiration on %s)"
+"(Next expiration on %ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1490
 #, c-format
 msgid ""
 "\n"
-"(Expired on %s)"
+"(Expired on %ls)"
 msgstr ""
 
 #: ../../../ui/wxWidgets/AddEditPropSheetDlg.cpp:1498
@@ -1416,7 +1416,7 @@ msgstr "Trascinare questa immagine in un'altra finestra per copiare il campo '"
 
 #: ../../../ui/wxWidgets/DragBarCtrl.cpp:144
 #, fuzzy, c-format
-msgid "Drag this image onto another window to paste the '%s' field."
+msgid "Drag this image onto another window to paste the '%ls' field."
 msgstr "Trascinare questa immagine in un'altra finestra per copiare il campo '"
 
 #: ../../../ui/wxWidgets/DragBarCtrl.cpp:152 ../../../ui/wxWidgets/GridCtrl.cpp:166
@@ -1975,7 +1975,7 @@ msgstr "Impossibile visualizzare l'URL"
 msgid ""
 "Error at column %d:\n"
 "\n"
-"%s"
+"%ls"
 msgstr ""
 
 #: ../../../ui/wxWidgets/MenuEditHandlers.cpp:1069
@@ -5203,19 +5203,20 @@ msgstr ""
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2625
 #, c-format
 msgid ""
-"Dropped entry '%s:%s:%s' password points to an entry that is also an alias.\n"
+"Dropped entry '%ls:%ls:%ls' password points to an entry that is also an "
+"alias.\n"
 "\n"
 "The dropped entry now references that entry's base entry."
 msgstr ""
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2632
 #, c-format
-msgid "This alias's target [%s:%s:%s] is not a normal entry."
+msgid "This alias's target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2649
 #, c-format
-msgid "This shortcut's target [%s:%s:%s] is not a normal entry."
+msgid "This shortcut's target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
 
 #: ../../../ui/wxWidgets/TreeCtrl.cpp:2732 ../../../core/core_st.cpp:110
@@ -5591,7 +5592,7 @@ msgstr ""
 
 #: ../../../core/core_st.cpp:30
 #, c-format
-msgid "This alias' target [%s:%s:%s] is not a normal entry."
+msgid "This alias' target [%ls:%ls:%ls] is not a normal entry."
 msgstr ""
 
 #: ../../../core/core_st.cpp:31
@@ -5614,12 +5615,12 @@ msgstr "database"
 
 #: ../../../core/core_st.cpp:35
 #, c-format
-msgid "multiple entries exist with title=%s."
+msgid "multiple entries exist with title=%ls."
 msgstr ""
 
 #: ../../../core/core_st.cpp:36
 #, c-format
-msgid "no entry exists with title=%s."
+msgid "no entry exists with title=%ls."
 msgstr ""
 
 #: ../../../core/core_st.cpp:37
